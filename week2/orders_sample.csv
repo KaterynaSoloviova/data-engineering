@@ -1,0 +1,4 @@
+order_id,order_date,city,amount_gbp,status
+1,2026-08-01,London,45.50,complete
+2,2026-08-01,Manchester,18.00,cancelled
+3,2026-08-02,Leeds,30.00,complete
