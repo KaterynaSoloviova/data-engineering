@@ -1,3 +1,7 @@
 week4/day2_airflow_dbt_demo/.DS_Store
 week4/day2_airflow_dbt_demo/airflow/logs
 week4/day2_airflow_dbt_demo/airflow/dbt_project/logs
+mini_assessment_project/airflow/logs/dag_processor/latest
+mini_assessment_project/airflow/logs/dag_processor/2026-10-27/dags-folder/quickcart_elt_dag.py.log
+mini_assessment_project/logs
+.DS_Store
