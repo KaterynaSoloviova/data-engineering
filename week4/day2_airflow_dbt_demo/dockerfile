@@ -1,0 +1,16 @@
+FROM apache/airflow:latest
+
+COPY requirements.txt /requirements.txt
+
+USER root
+
+RUN apt-get update && \
+    apt-get -y install git && \
+    apt-get clean
+
+
+USER airflow
+
+RUN pip install --no-cache-dir \
+    "apache-airflow==${AIRFLOW_VERSION}" \
+    -r /requirements.txt
