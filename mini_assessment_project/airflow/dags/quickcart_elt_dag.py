@@ -10,6 +10,7 @@ import pendulum # type: ignore
 from airflow import DAG
 from airflow.operators.python import PythonOperator # type: ignore
 from airflow.providers.postgres.hooks.postgres import PostgresHook # type: ignore
+from airflow.sensors.python import PythonSensor # type: ignore
 
 
 # --------------------------------------------------
@@ -81,6 +82,22 @@ FILES = {
     },
 }
 
+# --------------------------------------------------
+# Sensor: Wait until all CSV files are available
+# --------------------------------------------------
+
+def check_csv_files_ready():
+    logging.info("Checking whether all CSV files are available.")
+
+    for name, config in FILES.items():
+        filepath = DATA_DIR / config["filename"]
+
+        if not filepath.is_file():
+            logging.info("Waiting for file: %s", filepath)
+            return False
+
+    logging.info("All required CSV files are ready.")
+    return True
 
 # --------------------------------------------------
 # Task 1: Extract / check CSV files
@@ -298,5 +315,13 @@ with DAG(
         python_callable=transform_quickcart_data,
     )
 
+    wait_for_csv_files = PythonSensor(
+        task_id="wait_for_csv_files",
+        python_callable=check_csv_files_ready,
+        poke_interval=60,
+        timeout=3600,
+        mode="reschedule",
+    )
+
     # Define the execution order.
-    extract_task >> validate_task >> load_task >> transform_task
+    wait_for_csv_files >> extract_task >> validate_task >> load_task >> transform_task

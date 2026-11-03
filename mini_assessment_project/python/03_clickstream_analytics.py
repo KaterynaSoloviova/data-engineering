@@ -20,8 +20,8 @@ print("=" * 60)
 # Find the most visited pages
 page_visits = (
     clickstream["page_url"]
-    .value_counts()
-    .reset_index()
+    .value_counts() # counts occurrences (Series)
+    .reset_index() # converts the result into a DataFrame
 )
 
 page_visits.columns = ["page_url", "visit_count"]
