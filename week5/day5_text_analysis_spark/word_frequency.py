@@ -31,6 +31,10 @@ spark = (
 article_path = Path(__file__).parent / "article.txt"
 df = spark.read.text(str(article_path))
 
+# 2.1 Read local text file using Spark RDD
+# article_path = Path(__file__).parent / "article.txt"
+# lines = spark.sparkContext.textFile(str(article_path))
+
 # 3. Display the result
 df.show(truncate=False) # tells Spark not to shorten long text. Without truncate=False, Spark might display only part of a long line.
 
@@ -48,6 +52,12 @@ cleaned_df = df.select(
         )
     ).alias("text")
 )
+#5.1 Using RDD
+""" words = lines.flatMap(
+    lambda line: re.sub(r"[^a-zA-Z\s]", "", line.lower()).split()
+)
+"""
+
 
 # 6. Splitting the text into individual words
 
