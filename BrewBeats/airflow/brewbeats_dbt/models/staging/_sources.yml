@@ -1,0 +1,10 @@
+
+version: 2. 
+
+sources:
+  - name: raw
+    database: BREWBEATS_DB
+    schema: RAW
+    tables:
+      - name: coffee_sales
+        identifier: COFFEE_SALES_FROM_STAGE

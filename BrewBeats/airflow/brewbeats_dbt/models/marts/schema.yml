@@ -1,0 +1,24 @@
+# the version of the dbt YAML file format
+version: 2
+
+ # where we define our dbt models
+models:
+  - name: daily_revenue # the name of the model to be tested
+    description: "Daily coffee sales revenue and transaction summary."
+# the list of columns to be checked
+    columns:
+      - name: transaction_date
+        description: "Date of the coffee sales transactions."
+        tests:
+          - not_null  # the value must not be empty (NULL)
+          - unique    # each value must be unique
+
+      - name: total_revenue
+        description: "Total revenue generated on each day."
+        tests:
+          - not_null
+
+      - name: total_transactions
+        description: "Number of transactions recorded on each day."
+        tests:
+          - not_null

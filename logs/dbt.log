@@ -1,0 +1,211 @@
+[0m12:43:18.562044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a033a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b7434d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b743610>]}
+
+
+============================== 12:43:18.565517 | cfb87635-f0b7-498b-a6be-331f0e0d0c5a ==============================
+[0m12:43:18.565517 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m12:43:18.565858 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'version_check': 'True', 'use_colors': 'True', 'quiet': 'False', 'log_path': 'logs', 'printer_width': '80', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'hints_enabled': 'True', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'cache_selected_only': 'False', 'invocation_command': 'dbt init brewbeats_dbt', 'static_parser': 'True', 'introspect': 'True', 'maximum_seed_size_mib': '1', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'profiles_dir': '/Users/katerynasoloviova/.dbt', 'indirect_selection': 'eager', 'log_format': 'default', 'write_json': 'True', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False'}
+[0m12:43:18.566055 [debug] [MainThread]: Tracking: tracking
+[0m12:43:18.578326 [debug] [MainThread]: Starter project path: /Users/katerynasoloviova/Documents/ironhack_DE/data-engineering/.venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m12:43:18.583957 [info ] [MainThread]: Setting up your profile.
+[0m12:44:22.477804 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m12:44:22.478415 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m12:44:22.478660 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m12:52:03.346101 [info ] [MainThread]: Profile brewbeats_dbt written to /Users/katerynasoloviova/.dbt/profiles.yml using target's profile_template.yml and your supplied values.
+[0m12:52:03.449365 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m12:52:03.460530 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m12:52:03.460832 [info ] [MainThread]: python version: 3.13.4
+[0m12:52:03.461003 [info ] [MainThread]: python path: /Users/katerynasoloviova/Documents/ironhack_DE/data-engineering/.venv/bin/python3
+[0m12:52:03.463492 [info ] [MainThread]: os info: macOS-26.6.2-arm64-arm-64bit-Mach-O
+[0m12:52:03.617752 [info ] [MainThread]: Using profiles dir at /Users/katerynasoloviova/.dbt
+[0m12:52:03.618099 [info ] [MainThread]: Using profiles.yml file at /Users/katerynasoloviova/.dbt/profiles.yml
+[0m12:52:03.618297 [info ] [MainThread]: Using dbt_project.yml file at /Users/katerynasoloviova/Documents/ironhack_DE/data-engineering/brewbeats_dbt/dbt_project.yml
+[0m12:52:03.620215 [info ] [MainThread]: adapter type: snowflake
+[0m12:52:03.620654 [info ] [MainThread]: adapter version: 1.12.5
+[0m12:52:03.731627 [info ] [MainThread]: Configuration:
+[0m12:52:03.731934 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:52:03.732094 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:52:03.732236 [info ] [MainThread]: Required dependencies:
+[0m12:52:03.733324 [debug] [MainThread]: Executing "git --help"
+[0m12:52:03.811687 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:52:03.812350 [debug] [MainThread]: STDERR: "b''"
+[0m12:52:03.812585 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:52:03.812788 [info ] [MainThread]: Connection:
+[0m12:52:03.813006 [info ] [MainThread]:   account: ci44129
+[0m12:52:03.813167 [info ] [MainThread]:   user: SOLOVIOVA.KATERYNA@GMAIL.COM
+[0m12:52:03.813320 [info ] [MainThread]:   database: BREWBEATS_DB
+[0m12:52:03.813464 [info ] [MainThread]:   warehouse: DBT_WH
+[0m12:52:03.813610 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m12:52:03.813754 [info ] [MainThread]:   schema: DBT_DEV
+[0m12:52:03.813899 [info ] [MainThread]:   authenticator: externalbrowser
+[0m12:52:03.814047 [info ] [MainThread]:   oauth_client_id: None
+[0m12:52:03.814190 [info ] [MainThread]:   query_tag: None
+[0m12:52:03.814338 [info ] [MainThread]:   client_session_keep_alive: False
+[0m12:52:03.814485 [info ] [MainThread]:   host: None
+[0m12:52:03.814626 [info ] [MainThread]:   port: None
+[0m12:52:03.814768 [info ] [MainThread]:   proxy_host: None
+[0m12:52:03.814907 [info ] [MainThread]:   proxy_port: None
+[0m12:52:03.815038 [info ] [MainThread]:   protocol: None
+[0m12:52:03.815172 [info ] [MainThread]:   connect_retries: 1
+[0m12:52:03.815311 [info ] [MainThread]:   connect_timeout: None
+[0m12:52:03.815443 [info ] [MainThread]:   retry_on_database_errors: False
+[0m12:52:03.815577 [info ] [MainThread]:   retry_all: False
+[0m12:52:03.815710 [info ] [MainThread]:   insecure_mode: False
+[0m12:52:03.815841 [info ] [MainThread]:   reuse_connections: True
+[0m12:52:03.815978 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m12:52:03.816109 [info ] [MainThread]:   workload_identity_provider: None
+[0m12:52:03.816251 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m12:52:03.816385 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m12:52:03.818978 [info ] [MainThread]: Registered adapter: snowflake=1.12.5
+[0m12:52:04.063400 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m12:52:04.069548 [debug] [MainThread]: Using snowflake connection "debug"
+[0m12:52:04.069744 [debug] [MainThread]: On debug: select 1 as id
+[0m12:52:04.069904 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:52:05.309544 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m12:52:05.310146 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m12:52:05.327976 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m12:52:05.328614 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:52:05.329817 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  250001 (08001): Failed to login: External browser SSO failed: HTTP 404 Not Found from Snowflake during Snowflake authenticator-request: <!DOCTYPE html>
+  <html lang="en-US">
+  <head>
+  <title>File not Found</title>
+  
+  <style media="screen" type="text/css">
+  .ErrorContainer {
+  	width: 650px;
+  	margin: 100px auto;
+  	background: #f5f5f5;
+  	padding: 44px;
+  	border-radius: 7px;
+  	-moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.25);
+  	box-shadow: 0 1px 15px rgba(0, 0, 0, 0.25);
+  }
+  body{
+  	color: #565656;
+  	background:#00BBE6;
+  	margin: 0;
+  	font: 100%/1.8 "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  }
+  
+  
+  div.BodyLogo{background:url("data:image/png;base64,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") no-repeat #00BBE6;
+  	width: 390px;
+  	height: 100px;
+  	margin-top: 32px;
+  	margin-left: 32px;
+  	font-size: 1em;
+  }
+  
+  p.ErrorBody {
+  	font: 1.2em/1.6 "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  }
+  
+  h1 {
+  	font: bold 2.4em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  	margin: 0px;
+  }
+  
+  a.ErrorLinks{
+  	color: #555655;
+  	font-size: 1em;
+  }
+  
+  a:hover{
+  	text-decoration: underline;
+  }
+  
+  /* Rectangle 478: */
+  background: #00BBE6;
+  /* Oops! Page not found: */
+  font-family: Helvetica-Bold;
+  font-size: 34px;
+  color: #FFFFFF;
+  line-height: 41px;
+  /* bg: */
+  background: #FFFFFF;
+  box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.10);
+  border-radius: 8px;
+  /* Oops! Page not found: */
+  font-family: Helvetica-Bold;
+  font-size: 34px;
+  color: #4A4A4A;
+  line-height: 41px;
+  /* Go Home: */
+  font-family: Helvetica;
+  font-size: 14px;
+  color: rgba(74,74,74,0.80);
+  line-height: 17px;
+  /* Wordmark - Blue@1x: */
+  background: #FFFFFF;
+  </style>
+  </head>
+  
+  <body>
+  <div class="BodyLogo">
+  </div>
+  <div class="ErrorContainer">
+  
+  <h1>Error 404 Not Found</h1>
+  
+  <p class="ErrorBody">Our apologies for the inconvenience. The requested URL was not found on this server.  We suggest you try the following:
+   <ul>
+   <li><b>Verify url and typos</b> - The web page you were attempting to view may not exist or may have moved - try <em>checking the web address for typos</em>.<//li>
+     </ul>
+  
+  </div>
+  
+  </body>
+  
+  </html>
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m12:52:05.331914 [info ] [MainThread]: Your new dbt project "brewbeats_dbt" was created!
+Initialized new project in /Users/katerynasoloviova/Documents/ironhack_DE/data-engineering/brewbeats_dbt/brewbeats_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:52:05.332338 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m12:52:05.345936 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 526.8656, "process_in_blocks": "0", "process_kernel_time": 0.584297, "process_mem_max_rss": "185630720", "process_out_blocks": "0", "process_user_time": 2.079258}
+[0m12:52:05.350126 [debug] [MainThread]: Command `dbt init` succeeded at 12:52:05.349330 after 526.87 seconds
+[0m12:52:05.350551 [debug] [MainThread]: Connection 'debug' was left open.
+[0m12:52:05.350841 [debug] [MainThread]: On debug: No close available on handle
+[0m12:52:05.351797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11052a060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b7f0170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a54160>]}
+[0m12:52:05.352511 [debug] [MainThread]: Flushing usage events
+[0m12:52:05.948053 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:28:54.128796 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bc8ba10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d3fb4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d3fb750>]}
+
+
+============================== 15:28:54.133794 | fa91c1a4-0b6a-4f65-9dac-ba2e18888828 ==============================
+[0m15:28:54.133794 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m15:28:54.134271 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'use_colors': 'True', 'introspect': 'True', 'fail_fast': 'False', 'debug': 'False', 'version_check': 'True', 'static_parser': 'True', 'empty': 'False', 'indirect_selection': 'eager', 'no_print': 'None', 'hints_enabled': 'True', 'printer_width': '80', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'profiles_dir': '/Users/katerynasoloviova/.dbt', 'log_path': 'logs', 'target_path': 'None', 'write_json': 'True', 'log_cache_events': 'False', 'log_format': 'default', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m15:28:54.134585 [debug] [MainThread]: Tracking: tracking
+[0m15:28:54.134987 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/katerynasoloviova/Documents/ironhack_DE/data-engineering/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:28:54.137645 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.08960654, "process_in_blocks": "0", "process_kernel_time": 0.309681, "process_mem_max_rss": "132530176", "process_out_blocks": "0", "process_user_time": 2.206635}
+[0m15:28:54.138513 [debug] [MainThread]: Command `dbt run` failed at 15:28:54.138439 after 0.09 seconds
+[0m15:28:54.138776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d43d5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d4c0170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d458f30>]}
+[0m15:28:54.139036 [debug] [MainThread]: Flushing usage events
+[0m15:28:54.770907 [debug] [MainThread]: An error was encountered while trying to flush usage events
