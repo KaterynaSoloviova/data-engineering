@@ -1,0 +1,13 @@
+# Python virtual environment
+.venv/
+
+# Environment variables and secrets
+.env
+snowflake_key.p8
+
+# Public key (optional local file)
+snowflake_key.pub
+
+# Python cache
+__pycache__/
+*.pyc
